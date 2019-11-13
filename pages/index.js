@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 
+import Mailchimp from '../components/Mailchimp';
+
 const theme = {
   background: '#0075ff',
   fontColor: '#F5F7FA',
@@ -27,6 +29,7 @@ const Home = () => (
           <h2 className="visually-hidden">Julio, 2020</h2>
           <img src="/images/logo-v3.png" />
         </article>
+        <Mailchimp />
       </section>
     </main>
 
@@ -72,10 +75,6 @@ const Home = () => (
         width: 100%;
       }
 
-      .logo {
-        max-width: 550px;
-      }
-
       .visually-hidden {
         border: 0;
         clip: rect(0 0 0 0);
@@ -85,14 +84,6 @@ const Home = () => (
         padding: 0;
         position: absolute;
         width: 1px;
-      }
-
-      h1 {
-        font-size: 56px;
-      }
-
-      h2 {
-        font-size: 36px;
       }
     `}</style>
   </div>
