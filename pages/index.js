@@ -19,6 +19,7 @@ const Home = () => (
         href="https://fonts.googleapis.com/css?family=Roboto:700,900&display=swap"
         rel="stylesheet"
       />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
@@ -27,7 +28,8 @@ const Home = () => (
         <article>
           <h1 className="visually-hidden">React LaConf</h1>
           <h2 className="visually-hidden">Julio, 2020</h2>
-          <img src="/images/logo-v3.png" />
+          <img className="desktop" src="/images/logo-v3.png" />
+          <img className="mobile" src="/images/logo-mobile.png" />
         </article>
         <Mailchimp />
       </section>
@@ -51,6 +53,22 @@ const Home = () => (
     `}</style>
 
     <style jsx>{`
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: block;
+      }
+
+      @media (min-width: 768px) {
+        .desktop {
+          display: block;
+        }
+        .mobile {
+          display: none;
+        }
+      }
+
       main {
         background-color: ${theme.background};
         color: ${theme.fontColor};
@@ -68,6 +86,7 @@ const Home = () => (
         margin: 0 auto;
         height: 315px;
         width: 100%;
+        margin-top: -200px;
       }
 
       img {

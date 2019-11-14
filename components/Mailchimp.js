@@ -28,10 +28,9 @@ const Mailchimp = () => {
           name="mc-embedded-subscribe-form"
           className="validate"
           target="_blank"
-          novalidate
         >
           <div id="mc_embed_signup_scroll">
-            <label for="mce-EMAIL">
+            <label htmlFor="mce-EMAIL">
               Entérate de nuestro CFP, boletas, etc...
             </label>
             <input
@@ -51,8 +50,7 @@ const Mailchimp = () => {
               <input
                 type="text"
                 name="b_65fc2d9d1e01cff1b4aaf8139_df9d73ff4d"
-                tabindex="-1"
-                value=""
+                tabIndex="-1"
               />
             </div>
             <div className="clear">
@@ -78,11 +76,19 @@ const Mailchimp = () => {
             color: #fffbea;
             text-shadow: 1px 1px 1px rgb(138, 104, 1);
             font-weight: bold;
+            -webkit-appearance: none;
             border-radius: 0 5px 5px 0;
           }
 
           #mce-EMAIL {
             border-radius: 5px 0 0 5px !important;
+          }
+
+          @media (max-width: 768px) {
+            #mce-EMAIL,
+            #mc_embed_signup .button {
+              border-radius: 5px !important;
+            }
           }
         `}</style>
       </div>
