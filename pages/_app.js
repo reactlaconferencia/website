@@ -16,7 +16,7 @@ export default class MyApp extends App {
             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           />
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto:700,900&display=swap"
+            href="https://fonts.googleapis.com/css?family=Roboto:500,700,900&display=swap"
             rel="stylesheet"
           />
           <title>

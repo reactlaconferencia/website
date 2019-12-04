@@ -13,6 +13,12 @@ export const Subtitle = styled.h2`
   font-weight: 500;
 `;
 
+export const SectionTitle = styled.h2`
+  color: ${props => props.theme.text.title};
+  font-size: 36px;
+  font-weight: 700;
+`;
+
 export const Body = styled.p`
   color: ${props => props.theme.text.secondary};
   font-size: 16px;
