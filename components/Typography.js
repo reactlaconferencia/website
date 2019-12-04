@@ -24,3 +24,9 @@ export const Body = styled.p`
   font-size: 16px;
   font-weight: normal;
 `;
+
+export const SectionBody = styled.p`
+  color: ${props => props.theme.text.secondary};
+  font-size: 16px;
+  font-weight: 400;
+`;

@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     background-color: ${props => props.theme.bg.default};
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 16px;
     height: 100%;
     min-height: 100%;

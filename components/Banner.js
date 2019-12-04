@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { data } from '../data/data';
 import { Title, Subtitle, Body } from './Typography';
 import { Logo } from './Logo';
 import { SectionWrapper } from './SectionWrapper';
@@ -21,9 +22,13 @@ const ImageWrapper = styled.div`
 const CTAWrapper = styled.div`
   display: grid;
   grid-row-gap: 15px;
-  margin-top: 10px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
 `;
 
 export function Banner() {
@@ -48,7 +53,7 @@ export function Banner() {
         </Body>
       </BannerWrapper>
       <CTAWrapper>
-        <PrimaryCTA>call for speakers</PrimaryCTA>
+        <PrimaryCTA href={data.links.cfp}>call for speakers</PrimaryCTA>
         <PrimaryCTA>get tickets</PrimaryCTA>
       </CTAWrapper>
     </SectionWrapper>
