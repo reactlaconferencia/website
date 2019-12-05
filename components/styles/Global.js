@@ -19,6 +19,9 @@ const GlobalStyles = createGlobalStyle`
     font-size: inherit;
     margin: 0;
   }
+  ul {
+    padding: 0;
+  }
   a {
     text-decoration: none;
   }

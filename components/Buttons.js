@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const PrimaryCTA = styled.a`
-  background-color: ${props => props.theme.brand.default};
+const BaseButton = styled.a`
   border-radius: 5px;
-  color: ${props => props.theme.text.inverted};
   display: block;
   font-size: 14px;
   font-weight: 700;
@@ -15,7 +13,24 @@ export const PrimaryCTA = styled.a`
   transition: background-color 250ms ease;
 
   &:hover {
-    background-color: ${props => props.theme.brand.inverted};
     cursor: pointer;
+  }
+`;
+
+export const PrimaryCTA = styled(BaseButton)`
+  background-color: ${props => props.theme.cta.primary.background};
+  color: ${props => props.theme.cta.primary.text};
+
+  &:hover {
+    background-color: ${props => props.theme.cta.primary.hover};
+  }
+`;
+
+export const SecondaryCTA = styled(BaseButton)`
+  background-color: ${props => props.theme.cta.secondary.background};
+  color: ${props => props.theme.cta.secondary.text};
+
+  &:hover {
+    background-color: ${props => props.theme.cta.secondary.hover};
   }
 `;

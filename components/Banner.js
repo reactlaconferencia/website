@@ -5,7 +5,7 @@ import { data } from '../data/data';
 import { Title, Subtitle, Body } from './Typography';
 import { Logo } from './Logo';
 import { SectionWrapper } from './SectionWrapper';
-import { PrimaryCTA } from './Buttons';
+import { PrimaryCTA, SecondaryCTA } from './Buttons';
 
 const BannerWrapper = styled.section`
   display: grid;
@@ -54,7 +54,7 @@ export function Banner() {
       </BannerWrapper>
       <CTAWrapper>
         <PrimaryCTA href={data.links.cfp}>call for speakers</PrimaryCTA>
-        <PrimaryCTA>get tickets</PrimaryCTA>
+        <SecondaryCTA>get tickets</SecondaryCTA>
       </CTAWrapper>
     </SectionWrapper>
   );

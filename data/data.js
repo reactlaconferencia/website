@@ -9,8 +9,22 @@ export const data = {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper neque nunc mattis id gravida porttitor.',
   },
   numbers: {
-    title: 'Numbers, 1,2,3',
-    content: '# of people, track, speakers...',
+    title: 'The conference in numbers',
+    fineprint: 'July 17 - workshops / July 18 - Conference talks',
+    content: [
+      {
+        value: '300+',
+        label: 'people',
+      },
+      {
+        value: '1',
+        label: 'track',
+      },
+      {
+        value: '11',
+        label: 'speakers',
+      },
+    ],
   },
   tickets: {
     title: 'Tickets 🎟',
