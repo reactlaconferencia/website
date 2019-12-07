@@ -5,17 +5,14 @@ import { SectionWrapper } from './SectionWrapper';
 
 const Title = styled(SectionTitle)`
   text-align: center;
+  margin-bottom: 10px;
 `;
 
-const Body = styled(SectionBody)`
-  margin-top: 10px;
-`;
-
-export function Section({ title, content }) {
+export function Section({ title, children }) {
   return (
     <SectionWrapper>
       <Title>{title}</Title>
-      <Body>{content}</Body>
+      {children}
     </SectionWrapper>
   );
 }

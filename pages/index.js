@@ -5,13 +5,17 @@ import { Banner } from '../components/Banner';
 import { Section } from '../components/Section';
 import { NumbersSection } from '../components/NumbersSection';
 import { data } from '../data/data';
+import { SectionContent } from '../components/SectionContent';
+import { GetHere } from '../components/GetHere';
 
 const Home = () => (
   <div>
     <Navigation />
     <Banner />
     <div style={{ marginTop: 40 }}>
-      <Section title={data.about.title} content={data.about.content} />
+      <Section title={data.about.title}>
+        <SectionContent>{data.about.content}</SectionContent>
+      </Section>
     </div>
     <div style={{ marginTop: 20 }}>
       <NumbersSection
@@ -21,16 +25,12 @@ const Home = () => (
       />
     </div>
     <div style={{ marginTop: 20 }}>
-      <Section title={data.tickets.title} content={data.tickets.content} />
+      <Section title={data.getHere.title}>
+        <GetHere content={data.getHere.content} images={data.getHere.images} />
+      </Section>
     </div>
     <div style={{ marginTop: 20 }}>
-      <Section title={data.getHere.title} content={data.getHere.content} />
-    </div>
-    <div style={{ marginTop: 20 }}>
-      <Section title={data.schedule.title} content={data.schedule.content} />
-    </div>
-    <div style={{ marginTop: 20 }}>
-      <Section title={data.sponsors.title} content={data.sponsors.content} />
+      <Section title={data.sponsors.title} />
     </div>
   </div>
 );
