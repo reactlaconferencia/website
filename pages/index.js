@@ -12,6 +12,7 @@ import { Venue } from '../components/Venue';
 import { Team } from '../components/Team';
 import { Community } from '../components/Community';
 import { AboutMedellin } from '../components/AboutMedellin';
+import { Footer } from '../components/Footer';
 
 const Home = () => (
   <div>
@@ -32,6 +33,7 @@ const Home = () => (
       {data.community.content}
     </Community>
     <AboutMedellin />
+    <Footer />
   </div>
 );
 

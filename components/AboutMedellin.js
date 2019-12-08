@@ -5,7 +5,7 @@ import { Section, SectionInverted } from './Sections';
 import { ParagraphSmall, ParagraphAccent, HeaderSmall } from './Typography';
 
 const Title = styled(HeaderSmall)`
-  margin-top: 20px;
+  margin-top: 25px;
 `;
 
 const Accent = styled(ParagraphAccent)`
