@@ -17,7 +17,7 @@ const SectionWrapperInverted = styled.div`
 export function Section({ title, children }) {
   return (
     <SectionWrapper>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
       {children}
     </SectionWrapper>
   );

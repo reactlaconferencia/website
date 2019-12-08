@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { Navigation } from '../components/Navigation/Navigation';
 import { Banner } from '../components/Banner';
 import { Section, SectionInverted } from '../components/Sections';
-import { NumbersSection } from '../components/NumbersSection';
+import { Numbers } from '../components/Numbers';
 import { data } from '../data/data';
 import { SectionContent } from '../components/SectionContent';
 import { GetHere } from '../components/GetHere';
@@ -16,13 +16,7 @@ const Home = () => (
     <div style={{ marginTop: 30 }}>
       <AboutUs title={data.about.title}>{data.about.content}</AboutUs>
     </div>
-    <div style={{ marginTop: 20 }}>
-      <NumbersSection
-        title={data.numbers.title}
-        content={data.numbers.content}
-        fineprint={data.numbers.fineprint}
-      />
-    </div>
+    <Numbers cfpHref={data.links.cfp} content={data.numbers.content} />
     <div style={{ marginTop: 20 }}>
       <Section title={data.getHere.title}>
         <GetHere content={data.getHere.content} images={data.getHere.images} />

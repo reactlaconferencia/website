@@ -11,20 +11,7 @@ export const data = {
   numbers: {
     title: 'The conference in numbers',
     fineprint: 'July 17 - workshops / July 18 - Conference talks',
-    content: [
-      {
-        value: '300+',
-        label: 'people',
-      },
-      {
-        value: '1',
-        label: 'track',
-      },
-      {
-        value: '11',
-        label: 'speakers',
-      },
-    ],
+    content: ['300+ people', '1 track', '11 speakers'],
   },
   tickets: {
     title: 'Tickets 🎟',
