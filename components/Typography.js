@@ -38,6 +38,12 @@ export const ParagraphSmall = styled.p`
   font-weight: 400;
 `;
 
+export const ParagraphSmallBold = styled.p`
+  color: ${props => props.theme.text.secondary};
+  font-size: 16px;
+  font-weight: 700;
+`;
+
 export const ParagraphXSmall = styled.p`
   color: ${props => props.theme.text.secondary};
   font-size: 14px;

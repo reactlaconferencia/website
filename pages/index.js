@@ -9,6 +9,7 @@ import { GetHere } from '../components/GetHere';
 import { AboutUs } from '../components/AboutUs';
 import { Sponsors } from '../components/Sponsors';
 import { Venue } from '../components/Venue';
+import { Team } from '../components/Team';
 
 const Home = () => (
   <div>
@@ -22,6 +23,9 @@ const Home = () => (
       {data.sponsors.content}
     </Sponsors>
     <Venue title={data.venue.title}>{data.venue.content}</Venue>
+    <Team title={data.team.title} people={data.team.people}>
+      {data.team.content}
+    </Team>
   </div>
 );
 

@@ -58,4 +58,21 @@ export const data = {
     title: 'Venue',
     content: 'Complejo Ruta N Calle 67 Nº 52-20, Medellín - Colombia',
   },
+  team: {
+    title: 'Team',
+    content: 'Brought you by these awesome folks',
+    people: [
+      { name: 'Mateo Garcia', image: 'team/mateo.jpeg', company: 'Globant' },
+      {
+        name: 'Alejandro Nanez',
+        image: 'team/alejo.jpeg',
+        company: 'Zapier',
+      },
+      {
+        name: 'Simón Hoyos',
+        image: 'team/simon.jpeg',
+        company: 'Make it Real',
+      },
+    ],
+  },
 };
