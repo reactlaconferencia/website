@@ -1,21 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const HeaderSmall = styled.h1`
+export const HeaderSmall = styled.h2`
   color: ${props => props.theme.text.primary};
   font-size: 30px;
   line-height: 36px;
   font-weight: 900;
 `;
 
-export const Header = styled.h1`
+export const Header = styled.h2`
   color: ${props => props.theme.text.primary};
   font-size: 36px;
   line-height: 30px;
   font-weight: 900;
 `;
 
-export const HeaderLarge = styled.h1`
+export const HeaderLarge = styled.h2`
   color: ${props => props.theme.text.primary};
   font-size: 48px;
   font-weight: 900;

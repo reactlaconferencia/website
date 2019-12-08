@@ -54,4 +54,8 @@ export const data = {
       bronze: [],
     },
   },
+  venue: {
+    title: 'Venue',
+    content: 'Complejo Ruta N Calle 67 Nº 52-20, Medellín - Colombia',
+  },
 };

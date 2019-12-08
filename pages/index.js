@@ -5,10 +5,10 @@ import { Banner } from '../components/Banner';
 import { Section, SectionInverted } from '../components/Sections';
 import { Numbers } from '../components/Numbers';
 import { data } from '../data/data';
-import { SectionContent } from '../components/SectionContent';
 import { GetHere } from '../components/GetHere';
 import { AboutUs } from '../components/AboutUs';
 import { Sponsors } from '../components/Sponsors';
+import { Venue } from '../components/Venue';
 
 const Home = () => (
   <div>
@@ -21,9 +21,7 @@ const Home = () => (
     <Sponsors title={data.sponsors.title} companies={data.sponsors.companies}>
       {data.sponsors.content}
     </Sponsors>
-    <div style={{ marginTop: 20 }}>
-      <Section title={data.sponsors.title} />
-    </div>
+    <Venue title={data.venue.title}>{data.venue.content}</Venue>
   </div>
 );
 

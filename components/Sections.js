@@ -14,20 +14,20 @@ const SectionWrapperInverted = styled.div`
   padding-bottom: 25px;
 `;
 
-export function Section({ title, children }) {
+export function Section({ title, children, className }) {
   return (
-    <SectionWrapper>
+    <SectionWrapper className={className}>
       {title && <Title>{title}</Title>}
       {children}
     </SectionWrapper>
   );
 }
 
-export function SectionInverted({ title, children }) {
+export function SectionInverted({ title, children, className }) {
   return (
-    <SectionWrapperInverted>
+    <SectionWrapperInverted className={className}>
       <SectionWrapper>
-        <Title>{title}</Title>
+        {title && <Title>{title}</Title>}
         {children}
       </SectionWrapper>
     </SectionWrapperInverted>
