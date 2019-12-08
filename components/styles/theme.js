@@ -90,8 +90,8 @@ export const theme = {
       text: colors['purple-900'],
     },
     secondary: {
-      background: colors['purple-900'],
-      hover: colors['purple-900'],
+      background: colors['purple-800'],
+      hover: colors['purple-800'],
       text: colors['purple-050'],
     },
     green: {

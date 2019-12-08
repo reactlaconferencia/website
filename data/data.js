@@ -40,8 +40,18 @@ export const data = {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper neque nunc mattis id gravida porttitor.',
   },
   sponsors: {
-    title: 'Sponsors 🏅',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper neque nunc mattis id gravida porttitor.',
+    title: 'Sponsors',
+    content: 'This wonderful event is posible thanks to this amazing companies',
+    companies: {
+      platinum: [
+        {
+          name: 'Ruta N',
+          image: 'rutan.png',
+        },
+      ],
+      gold: [],
+      silver: [],
+      bronze: [],
+    },
   },
 };

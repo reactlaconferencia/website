@@ -25,6 +25,9 @@ const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
   }
+  li {
+    list-style: none;
+  }
   #__next,
   #__next > div {
     height: 100%;

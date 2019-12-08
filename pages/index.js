@@ -8,6 +8,7 @@ import { data } from '../data/data';
 import { SectionContent } from '../components/SectionContent';
 import { GetHere } from '../components/GetHere';
 import { AboutUs } from '../components/AboutUs';
+import { Sponsors } from '../components/Sponsors';
 
 const Home = () => (
   <div>
@@ -17,11 +18,9 @@ const Home = () => (
       <AboutUs title={data.about.title}>{data.about.content}</AboutUs>
     </div>
     <Numbers cfpHref={data.links.cfp} content={data.numbers.content} />
-    <div style={{ marginTop: 20 }}>
-      <Section title={data.getHere.title}>
-        <GetHere content={data.getHere.content} images={data.getHere.images} />
-      </Section>
-    </div>
+    <Sponsors title={data.sponsors.title} companies={data.sponsors.companies}>
+      {data.sponsors.content}
+    </Sponsors>
     <div style={{ marginTop: 20 }}>
       <Section title={data.sponsors.title} />
     </div>
