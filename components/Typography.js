@@ -11,6 +11,7 @@ export const HeaderSmall = styled.h1`
 export const Header = styled.h1`
   color: ${props => props.theme.text.primary};
   font-size: 36px;
+  line-height: 30px;
   font-weight: 900;
 `;
 
@@ -26,8 +27,19 @@ export const Paragraph = styled.p`
   font-weight: 500;
 `;
 
+export const ParagraphAccent = styled(Paragraph)`
+  color: ${props => props.theme.text.accent};
+  font-weight: 700;
+`;
+
 export const ParagraphSmall = styled.p`
   color: ${props => props.theme.text.secondary};
   font-size: 16px;
+  font-weight: 400;
+`;
+
+export const ParagraphXSmall = styled.p`
+  color: ${props => props.theme.text.secondary};
+  font-size: 14px;
   font-weight: 500;
 `;

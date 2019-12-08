@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const BaseButton = styled.a`
-  border-radius: 5px;
+  border-radius: 20px;
   display: block;
   font-size: 14px;
-  font-weight: 700;
-  padding: 12px 6px;
+  font-weight: 900;
+  padding: 12px;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
@@ -32,5 +32,14 @@ export const SecondaryCTA = styled(BaseButton)`
 
   &:hover {
     background-color: ${props => props.theme.cta.secondary.hover};
+  }
+`;
+
+export const GreenCTA = styled(BaseButton)`
+  background-color: ${props => props.theme.cta.green.background};
+  color: ${props => props.theme.cta.green.text};
+
+  &:hover {
+    background-color: ${props => props.theme.cta.green.hover};
   }
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { Navigation } from '../components/Navigation/Navigation';
 import { Banner } from '../components/Banner';
-import { Section } from '../components/Section';
+import { Section, SectionInverted } from '../components/Sections';
 import { NumbersSection } from '../components/NumbersSection';
 import { data } from '../data/data';
 import { SectionContent } from '../components/SectionContent';
@@ -12,10 +12,10 @@ const Home = () => (
   <div>
     <Navigation />
     <Banner />
-    <div style={{ marginTop: 40 }}>
-      <Section title={data.about.title}>
+    <div style={{ marginTop: 30 }}>
+      <SectionInverted title={data.about.title}>
         <SectionContent>{data.about.content}</SectionContent>
-      </Section>
+      </SectionInverted>
     </div>
     <div style={{ marginTop: 20 }}>
       <NumbersSection

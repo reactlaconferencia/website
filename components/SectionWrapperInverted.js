@@ -1,23 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SectionWrapper } from './SectionWrapper';
+import { SectionContent } from './SectionContent';
 
-const Wrapper = styled.div`
-  background-color: ${props => props.theme.brand.wash};
-  padding: 30px;
+export const SectionWrapperInverted = styled(SectionWrapper)`
+  background-color: ${props => props.theme.bg.default};
+  padding-top: 25px;
+  padding-bottom: 25px;
 `;
-
-const Content = styled.section`
-  margin: 0 auto;
-  @media (min-width: 768px) {
-    max-width: 768px;
-  }
-`;
-
-export function SectionWrapperInverted({ children }) {
-  return (
-    <Wrapper>
-      <Content>{children}</Content>
-    </Wrapper>
-  );
-}

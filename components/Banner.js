@@ -2,10 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { data } from '../data/data';
-import { Header, HeaderLarge, Paragraph } from './Typography';
+import {
+  Header,
+  Paragraph,
+  ParagraphAccent,
+  ParagraphXSmall,
+} from './Typography';
 import { Logo } from './Logo';
 import { SectionWrapper } from './SectionWrapper';
-import { PrimaryCTA, SecondaryCTA } from './Buttons';
+import { PrimaryCTA, GreenCTA } from './Buttons';
 
 const BannerWrapper = styled.section`
   display: grid;
@@ -36,25 +41,28 @@ export function Banner() {
     <SectionWrapper>
       <BannerWrapper>
         <Header>React La Conferencia</Header>
-        <HeaderLarge>
-          The First React conference for Spanish speakers in Latin America
-        </HeaderLarge>
         <Paragraph>
+          The{' '}
+          <ParagraphAccent as="span">First React conference</ParagraphAccent>{' '}
+          for Spanish speakers{' '}
+          <ParagraphAccent as="span">in Latin America</ParagraphAccent>
+        </Paragraph>
+        <ParagraphXSmall>
           Medellín
           <br />
           July 17 - 18, 2020
-        </Paragraph>
+        </ParagraphXSmall>
         <ImageWrapper>
           <Logo width={128} />
         </ImageWrapper>
-        <Paragraph>
+        <ParagraphXSmall>
           Complejo Ruta N Calle 67 Nº 52-20
           <br /> Piso 2 Torre A. Medellín - Colombia
-        </Paragraph>
+        </ParagraphXSmall>
       </BannerWrapper>
       <CTAWrapper>
-        <PrimaryCTA href={data.links.cfp}>call for speakers</PrimaryCTA>
-        <SecondaryCTA>get tickets</SecondaryCTA>
+        <GreenCTA href={data.links.cfp}>call for speakers</GreenCTA>
+        <PrimaryCTA>get tickets</PrimaryCTA>
       </CTAWrapper>
     </SectionWrapper>
   );

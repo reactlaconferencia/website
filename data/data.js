@@ -4,7 +4,7 @@ export const data = {
       'https://docs.google.com/forms/d/1WCcDZ5BbEJ5XibrBilwDPpJBKz2Bm0FoD_Ao28jtq7M/edit',
   },
   about: {
-    title: 'About us 🇨🇴',
+    title: 'About us',
     content:
       'We are the first React conference for Spanish speakers in Latin America. This is an event by the community to the community! Come and learn about React with us in Medellín, Colombia.',
   },

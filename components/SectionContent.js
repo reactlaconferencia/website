@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Paragraph } from './Typography';
+import { ParagraphSmall } from './Typography';
 
 export function SectionContent({ children }) {
-  return <Paragraph>{children}</Paragraph>;
+  return <ParagraphSmall>{children}</ParagraphSmall>;
 }

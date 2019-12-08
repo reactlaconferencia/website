@@ -76,6 +76,7 @@ export const theme = {
   },
   brand: {
     default: colors['blue-grey-050'],
+    purple500: colors['purple-500'],
   },
   text: {
     primary: colors['blue-grey-900'],
