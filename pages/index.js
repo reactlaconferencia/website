@@ -10,6 +10,7 @@ import { AboutUs } from '../components/AboutUs';
 import { Sponsors } from '../components/Sponsors';
 import { Venue } from '../components/Venue';
 import { Team } from '../components/Team';
+import { Community } from '../components/Community';
 
 const Home = () => (
   <div>
@@ -26,6 +27,9 @@ const Home = () => (
     <Team title={data.team.title} people={data.team.people}>
       {data.team.content}
     </Team>
+    <Community title={data.community.title} partners={data.community.partners}>
+      {data.community.content}
+    </Community>
   </div>
 );
 

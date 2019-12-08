@@ -75,4 +75,15 @@ export const data = {
       },
     ],
   },
+  community: {
+    title: 'Community',
+    content: 'Different countries, one community.',
+    partners: [
+      {
+        name: 'React Medellín',
+        image: 'community/react-medellin.svg',
+        country: 'Colombia',
+      },
+    ],
+  },
 };
