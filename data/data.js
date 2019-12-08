@@ -76,7 +76,7 @@ export const data = {
     ],
   },
   community: {
-    title: 'Community',
+    title: 'Community Partners',
     content: 'Different countries, one community.',
     partners: [
       {

@@ -71,7 +71,7 @@ export function Community({ children, title, partners }) {
         `}
         href="#"
       >
-        Join the community
+        Become a partner
       </PrimaryCTA>
     </Section>
   );
