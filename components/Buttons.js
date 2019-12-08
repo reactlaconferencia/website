@@ -7,6 +7,7 @@ const BaseButton = styled.a`
   font-size: 14px;
   font-weight: 900;
   padding: 12px;
+  max-width: 300px;
   text-align: center;
   text-transform: uppercase;
   width: 100%;

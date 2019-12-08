@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { data } from '../data/data';
 import {
-  Header,
+  Header as HeaderPrimitive,
   Paragraph,
   ParagraphAccent,
   ParagraphXSmall,
@@ -26,6 +26,7 @@ const ImageWrapper = styled.div`
 
 const CTAWrapper = styled.div`
   display: grid;
+  justify-items: center;
   grid-row-gap: 15px;
   margin-top: 20px;
 
@@ -36,17 +37,28 @@ const CTAWrapper = styled.div`
   }
 `;
 
+const Header = styled(HeaderPrimitive)`
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+`;
+
+const HeaderSubtitle = styled(Paragraph)`
+  font-weight: 400;
+  max-width: 290px;
+`;
+
 export function Banner() {
   return (
-    <SectionWrapper>
+    <>
       <BannerWrapper>
         <Header>React La Conferencia</Header>
-        <Paragraph>
+        <HeaderSubtitle>
           The{' '}
           <ParagraphAccent as="span">First React conference</ParagraphAccent>{' '}
           for Spanish speakers{' '}
           <ParagraphAccent as="span">in Latin America</ParagraphAccent>
-        </Paragraph>
+        </HeaderSubtitle>
         <ParagraphXSmall>
           Medellín
           <br />
@@ -60,10 +72,12 @@ export function Banner() {
           <br /> Piso 2 Torre A. Medellín - Colombia
         </ParagraphXSmall>
       </BannerWrapper>
-      <CTAWrapper>
-        <GreenCTA href={data.links.cfp}>call for speakers</GreenCTA>
-        <PrimaryCTA>get tickets</PrimaryCTA>
-      </CTAWrapper>
-    </SectionWrapper>
+      <SectionWrapper>
+        <CTAWrapper>
+          <GreenCTA href={data.links.cfp}>call for speakers</GreenCTA>
+          <PrimaryCTA>get tickets</PrimaryCTA>
+        </CTAWrapper>
+      </SectionWrapper>
+    </>
   );
 }

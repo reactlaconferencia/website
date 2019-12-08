@@ -7,15 +7,14 @@ import { NumbersSection } from '../components/NumbersSection';
 import { data } from '../data/data';
 import { SectionContent } from '../components/SectionContent';
 import { GetHere } from '../components/GetHere';
+import { AboutUs } from '../components/AboutUs';
 
 const Home = () => (
   <div>
     <Navigation />
     <Banner />
     <div style={{ marginTop: 30 }}>
-      <SectionInverted title={data.about.title}>
-        <SectionContent>{data.about.content}</SectionContent>
-      </SectionInverted>
+      <AboutUs title={data.about.title}>{data.about.content}</AboutUs>
     </div>
     <div style={{ marginTop: 20 }}>
       <NumbersSection

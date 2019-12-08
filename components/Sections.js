@@ -2,11 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { Header } from './Typography';
 import { SectionWrapper } from './SectionWrapper';
-import { SectionWrapperInverted } from './SectionWrapperInverted';
 
 const Title = styled(Header)`
   text-align: center;
   margin-bottom: 10px;
+`;
+
+const SectionWrapperInverted = styled.div`
+  background-color: ${props => props.theme.bg.default};
+  padding-top: 25px;
+  padding-bottom: 25px;
 `;
 
 export function Section({ title, children }) {
@@ -21,8 +26,10 @@ export function Section({ title, children }) {
 export function SectionInverted({ title, children }) {
   return (
     <SectionWrapperInverted>
-      <Title>{title}</Title>
-      {children}
+      <SectionWrapper>
+        <Title>{title}</Title>
+        {children}
+      </SectionWrapper>
     </SectionWrapperInverted>
   );
 }
