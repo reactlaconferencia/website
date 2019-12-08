@@ -72,31 +72,31 @@ const colors = {
 export const theme = {
   bg: {
     default: colors['blue-grey-050'],
+    white: '#fff',
   },
   brand: {
     default: colors['blue-grey-050'],
-    inverted: colors['purple-900'],
-    wash: colors['purple-800'],
   },
   text: {
-    title: colors['blue-grey-900'],
-    default: colors['blue-grey-600'],
-    secondary: colors['blue-grey-600'],
-    inverted: {
-      primary: colors['purple-050'],
-      secondary: colors['purple-200'],
-    },
+    primary: colors['blue-grey-900'],
+    secondary: colors['blue-grey-800'],
+    accent: colors['purple-700'],
   },
   cta: {
     primary: {
-      background: colors['purple-800'],
+      background: colors['purple-050'],
+      hover: colors['purple-050'],
+      text: colors['purple-900'],
+    },
+    secondary: {
+      background: colors['purple-900'],
       hover: colors['purple-900'],
       text: colors['purple-050'],
     },
-    secondary: {
-      background: colors['teal-200'],
-      hover: colors['teal-300'],
-      text: colors['teal-800'],
+    green: {
+      background: colors['teal-100'],
+      hover: colors['teal-100'],
+      text: colors['teal-900'],
     },
   },
 };

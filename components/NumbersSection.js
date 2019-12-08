@@ -18,18 +18,18 @@ const Wrapper = styled.ul`
 `;
 
 const Value = styled.h2`
-  color: ${props => props.theme.text.inverted.primary};
+  color: ${props => props.theme.text.primary};
   font-size: 36px;
 `;
 
 const Label = styled.h3`
-  color: ${props => props.theme.text.inverted.secondary};
+  color: ${props => props.theme.text.primary};
   font-size: 24px;
   text-transform: uppercase;
 `;
 
 const Fineprint = styled.p`
-  color: ${props => props.theme.text.inverted.primary};
+  color: ${props => props.theme.text.primary};
   font-size: 12px;
   margin-top: 30px;
   text-align: center;

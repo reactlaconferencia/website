@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { data } from '../data/data';
-import { Title, Subtitle, Body } from './Typography';
+import { Header, HeaderLarge, Paragraph } from './Typography';
 import { Logo } from './Logo';
 import { SectionWrapper } from './SectionWrapper';
 import { PrimaryCTA, SecondaryCTA } from './Buttons';
@@ -35,22 +35,22 @@ export function Banner() {
   return (
     <SectionWrapper>
       <BannerWrapper>
-        <Title>React La Conferencia</Title>
-        <Subtitle>
+        <Header>React La Conferencia</Header>
+        <HeaderLarge>
           The First React conference for Spanish speakers in Latin America
-        </Subtitle>
-        <Body>
+        </HeaderLarge>
+        <Paragraph>
           Medellín
           <br />
           July 17 - 18, 2020
-        </Body>
+        </Paragraph>
         <ImageWrapper>
           <Logo width={128} />
         </ImageWrapper>
-        <Body>
+        <Paragraph>
           Complejo Ruta N Calle 67 Nº 52-20
           <br /> Piso 2 Torre A. Medellín - Colombia
-        </Body>
+        </Paragraph>
       </BannerWrapper>
       <CTAWrapper>
         <PrimaryCTA href={data.links.cfp}>call for speakers</PrimaryCTA>

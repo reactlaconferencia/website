@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
     min-height: 100%;
   }
   body {
-    background-color: ${props => props.theme.bg.default};
+    background-color: ${props => props.theme.white};
     font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 16px;
     height: 100%;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SectionBody, Subtitle } from './Typography';
+import { Paragraph, HeaderSmall } from './Typography';
 import { buildImagePath } from '../utils/utils';
 import { SectionWrapper } from './SectionWrapper';
 
@@ -31,10 +31,10 @@ export function GetHere({ children, content, images }) {
   return (
     <>
       <ContentWrapper>
-        <SectionBody>{content.airport}</SectionBody>
+        <Paragraph>{content.airport}</Paragraph>
       </ContentWrapper>
       <ContentWrapper>
-        <Subtitle>Hotels</Subtitle>
+        <HeaderSmall>Hotels</HeaderSmall>
         <Ul>
           <Li>
             <a href={content.hotels[0].url}>{content.hotels[0].name}</a>

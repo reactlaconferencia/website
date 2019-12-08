@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SectionBody, SectionTitle } from './Typography';
+import { Header } from './Typography';
 import { SectionWrapper } from './SectionWrapper';
 
-const Title = styled(SectionTitle)`
+const Title = styled(Header)`
   text-align: center;
   margin-bottom: 10px;
 `;
