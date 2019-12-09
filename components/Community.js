@@ -63,7 +63,13 @@ export function Community({ children, title, partners }) {
       `}
       title={title}
     >
-      <ParagraphSmall>{children}</ParagraphSmall>
+      <ParagraphSmall
+        css={`
+          text-align: center;
+        `}
+      >
+        {children}
+      </ParagraphSmall>
       <Partners partners={partners} />
       <PrimaryCTA
         css={`

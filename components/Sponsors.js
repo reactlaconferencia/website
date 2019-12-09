@@ -11,7 +11,12 @@ const BaseImage = styled.img`
   width: 100%;
 `;
 
-const PlatinumImage = styled(BaseImage)``;
+const PlatinumImage = styled(BaseImage)`
+  display: flex;
+  justify-self: center;
+  max-width: 200px;
+  margin: 0 auto;
+`;
 
 const SponsorListHeader = styled(HeaderSmall)`
   text-align: center;
@@ -40,7 +45,7 @@ function SponsorsList({ tier, sponsors }) {
       <ul>
         {sponsors.map(sponsor => (
           <li key={sponsor.name}>
-            <BaseImage
+            <PlatinumImage
               alt={`${sponsor.name} logo`}
               src={buildImagePath(sponsor.image)}
             />
@@ -54,7 +59,13 @@ function SponsorsList({ tier, sponsors }) {
 export function Sponsors({ children, title, companies }) {
   return (
     <SectionInverted title={title}>
-      <ParagraphSmall>{children}</ParagraphSmall>
+      <ParagraphSmall
+        css={`
+          text-align: center;
+        `}
+      >
+        {children}
+      </ParagraphSmall>
       <SponsorsList tier="Platinum" sponsors={companies.platinum} />
       <SponsorsList tier="Gold" sponsors={companies.gold} />
       <SponsorsList tier="Silver" sponsors={companies.silver} />

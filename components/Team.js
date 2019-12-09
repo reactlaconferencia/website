@@ -80,7 +80,13 @@ export function Team({ children, title, people }) {
       `}
       title={title}
     >
-      <ParagraphSmall>{children}</ParagraphSmall>
+      <ParagraphSmall
+        css={`
+          text-align: center;
+        `}
+      >
+        {children}
+      </ParagraphSmall>
       <People people={people} />
       <PrimaryCTA
         css={`

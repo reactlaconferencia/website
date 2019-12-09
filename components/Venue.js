@@ -17,6 +17,7 @@ export function Venue({ title, children }) {
         <ParagraphSmall
           css={`
             margin-top: 20px;
+            text-align: center;
           `}
         >
           {children}
