@@ -50,7 +50,7 @@ export function AboutMedellin() {
             </Accent>
           </Paragraph>
         </Li>
-        <Li style={{ listStyle: 'bullet' }}>
+        <Li>
           <Paragraph>
             <Accent
               as="a"

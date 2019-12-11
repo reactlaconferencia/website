@@ -7,6 +7,7 @@ import {
   Paragraph,
   ParagraphAccent,
   ParagraphXSmall,
+  ParagraphXSmallAccent,
 } from './Typography';
 import { Logo } from './Logo';
 import { SectionWrapper } from './SectionWrapper';
@@ -32,7 +33,7 @@ const CTAWrapper = styled.div`
 
   @media (min-width: 768px) {
     margin-top: 30px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 30px;
   }
 `;
@@ -59,11 +60,7 @@ export function Banner() {
           for Spanish speakers{' '}
           <ParagraphAccent as="span">in Latin America</ParagraphAccent>
         </HeaderSubtitle>
-        <ParagraphXSmall>
-          Medellín
-          <br />
-          July 17 - 18, 2020
-        </ParagraphXSmall>
+        <ParagraphXSmallAccent>Medellín, July 18, 2020</ParagraphXSmallAccent>
         <ImageWrapper>
           <Logo width={128} />
         </ImageWrapper>
@@ -75,7 +72,7 @@ export function Banner() {
       <SectionWrapper>
         <CTAWrapper>
           <GreenCTA href={data.links.cfp}>call for speakers</GreenCTA>
-          <PrimaryCTA>get tickets</PrimaryCTA>
+          {/* <PrimaryCTA>get tickets</PrimaryCTA> */}
         </CTAWrapper>
       </SectionWrapper>
     </>

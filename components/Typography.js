@@ -49,3 +49,8 @@ export const ParagraphXSmall = styled.p`
   font-size: 14px;
   font-weight: 500;
 `;
+
+export const ParagraphXSmallAccent = styled(ParagraphXSmall)`
+  color: ${props => props.theme.text.accent};
+  font-weight: 700;
+`;

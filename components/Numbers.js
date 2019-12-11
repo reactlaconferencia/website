@@ -15,14 +15,25 @@ const List = styled.ul`
   display: grid;
   list-style: none;
   grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 5px;
+  grid-row-gap: 10px;
   justify-items: center;
   text-align: center;
 
+  span {
+    &:first-of-type {
+      color: ${props => props.theme.text.accent};
+    }
+  }
+
   @media (min-width: 768px) {
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 0;
     grid-template-rows: initial;
+
+    span {
+      display: block;
+    }
   }
 `;
 
@@ -37,7 +48,14 @@ export function Numbers({ content, cfpHref }) {
             </ListItem>
           ))}
         </List>
-        <PrimaryCTA href={cfpHref}>call for speakers</PrimaryCTA>
+        <PrimaryCTA
+          css={`
+            margin-top: 10px;
+          `}
+          href={cfpHref}
+        >
+          call for speakers
+        </PrimaryCTA>
       </Section>
     </PrimitiveSection>
   );

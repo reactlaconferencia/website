@@ -36,6 +36,11 @@ const PeopleList = styled.ul`
   max-width: 350px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 768px;
+  }
 `;
 
 function Person({ name, image, company }) {

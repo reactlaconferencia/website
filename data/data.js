@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const data = {
   links: {
     cfp:
@@ -6,12 +8,23 @@ export const data = {
   about: {
     title: 'About us',
     content:
-      'We are the first React conference for Spanish speakers in Latin America. This is an event by the community to the community! Come and learn about React with us in Medellín, Colombia.',
+      'We are the first React conference for Spanish speakers in Latin America. This is an event by the community to the community! Come and find the latest knowledge and awesome experiences around React in Medellín, Colombia.',
   },
   numbers: {
     title: 'The conference in numbers',
-    fineprint: 'July 17 - workshops / July 18 - Conference talks',
-    content: ['300+ people', '1 track', '11 speakers'],
+    fineprint: 'July 18 - Conference',
+    content: [
+      <>
+        <span>300+</span>
+        <span>people</span>
+      </>,
+      <>
+        <span>1</span> <span>track</span>
+      </>,
+      <>
+        <span>11</span> <span>speakers</span>
+      </>,
+    ],
   },
   tickets: {
     title: 'Tickets 🎟',
