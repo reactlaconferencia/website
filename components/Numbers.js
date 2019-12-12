@@ -19,12 +19,6 @@ const List = styled.ul`
   justify-items: center;
   text-align: center;
 
-  span {
-    &:first-of-type {
-      color: ${props => props.theme.text.accent};
-    }
-  }
-
   @media (min-width: 768px) {
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
