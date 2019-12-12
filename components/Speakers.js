@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import { Section } from '../components/Sections';
 import { ParagraphSmall, ParagraphSmallBold } from '../components/Typography';
-import { PrimaryCTA } from '../components/Buttons';
 import { buildImagePath } from '../utils/utils';
 
 const PersonWrapper = styled.div`
@@ -77,7 +76,7 @@ function People({ people }) {
   );
 }
 
-export function Team({ children, title, people }) {
+export function Speakers({ children, title, people }) {
   return (
     <Section
       css={`
@@ -93,14 +92,6 @@ export function Team({ children, title, people }) {
         {children}
       </ParagraphSmall>
       <People people={people} />
-      <PrimaryCTA
-        css={`
-          margin: 20px auto auto;
-        `}
-        href="#"
-      >
-        Join the team
-      </PrimaryCTA>
     </Section>
   );
 }

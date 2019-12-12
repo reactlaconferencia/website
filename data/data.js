@@ -90,6 +90,27 @@ export const data = {
       },
     ],
   },
+  speakers: {
+    title: 'Speakers',
+    content: 'We are honored to have such a great initial lineup.',
+    people: [
+      {
+        name: 'Donavon',
+        image: 'speakers/donavon.jpg',
+        country: 'USA 🇺🇸',
+      },
+      {
+        name: 'Maria Fernanda Arboleda',
+        image: 'speakers/maria-fernanda.jpg',
+        country: 'Colombia 🇨🇴',
+      },
+      {
+        name: 'Ely Alvarado',
+        image: 'speakers/ely.png',
+        country: 'Colombia 🇨🇴',
+      },
+    ],
+  },
   community: {
     title: 'Community Partners',
     content: 'Different countries, one community.',

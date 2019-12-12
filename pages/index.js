@@ -10,6 +10,7 @@ import { AboutUs } from '../components/AboutUs';
 import { Sponsors } from '../components/Sponsors';
 import { Venue } from '../components/Venue';
 import { Team } from '../components/Team';
+import { Speakers } from '../components/Speakers';
 import { Community } from '../components/Community';
 import { AboutMedellin } from '../components/AboutMedellin';
 import { Footer } from '../components/Footer';
@@ -25,6 +26,9 @@ const Home = () => (
     <Sponsors title={data.sponsors.title} companies={data.sponsors.companies}>
       {data.sponsors.content}
     </Sponsors>
+    <Speakers title={data.speakers.title} people={data.speakers.people}>
+      {data.speakers.content}
+    </Speakers>
     <Venue title={data.venue.title}>{data.venue.content}</Venue>
     <Team title={data.team.title} people={data.team.people}>
       {data.team.content}
