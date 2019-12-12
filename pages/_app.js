@@ -1,11 +1,19 @@
 import App from 'next/app';
 import Head from 'next/head';
 import React from 'react';
+import ReactGA from 'react-ga';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../components/styles/Global';
 import { theme } from '../components/styles/theme';
 
+ReactGA.initialize('UA-154420342-1');
+
 export default class MyApp extends App {
+  componentDidMount() {
+    if (window && window.location) {
+      ReactGA.pageview(window.location.pathname + window.location.search);
+    }
+  }
   render() {
     const { Component, pageProps } = this.props;
     return (

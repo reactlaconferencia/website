@@ -2,8 +2,10 @@ import React from 'react';
 
 export const data = {
   links: {
-    cfp:
-      'https://docs.google.com/forms/d/1WCcDZ5BbEJ5XibrBilwDPpJBKz2Bm0FoD_Ao28jtq7M/edit',
+    cfp: 'https://forms.gle/Js2ohTHi8yvENuNs9',
+    team: 'https://forms.gle/GnDZ5f5zDPF79wxB8',
+    community: 'https://forms.gle/hBXbTV7DYBsRXiQTA',
+    sponsors: 'https://forms.gle/MnJNbzU4K5WohuhN9',
   },
   about: {
     title: 'About us',
