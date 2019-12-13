@@ -105,7 +105,7 @@ export const data = {
     content: 'We are honored to have such a great initial lineup.',
     people: [
       {
-        name: 'Donavon',
+        name: 'Donavon West',
         image: 'speakers/donavon.jpg',
         extra: '🇺🇸',
         website: 'https://twitter.com/donavon',

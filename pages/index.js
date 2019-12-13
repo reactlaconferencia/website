@@ -14,6 +14,7 @@ import { Speakers } from '../components/Speakers';
 import { Community } from '../components/Community';
 import { AboutMedellin } from '../components/AboutMedellin';
 import { Footer } from '../components/Footer';
+import { CodeOfConduct } from '../components/CodeOfConduct';
 
 const Home = () => (
   <div>
