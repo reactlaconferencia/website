@@ -7,6 +7,10 @@ const Wrapper = styled.div`
   position: relative;
   text-align: right;
   width: 100%;
+
+  @media (min-width: 768px) {
+    height: 500px;
+  }
 `;
 
 const Canvas = styled.div`
@@ -14,12 +18,20 @@ const Canvas = styled.div`
   background: none !important;
   height: 250px;
   width: 100%;
+
+  @media (min-width: 768px) {
+    height: 500px;
+  }
 `;
 
 const IFrame = styled.iframe`
   border: none;
   height: 250px;
   width: 100%;
+
+  @media (min-width: 768px) {
+    height: 500px;
+  }
 `;
 
 export function Map() {

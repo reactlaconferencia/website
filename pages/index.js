@@ -23,7 +23,11 @@ const Home = () => (
       <AboutUs title={data.about.title}>{data.about.content}</AboutUs>
     </div>
     <Numbers cfpHref={data.links.cfp} content={data.numbers.content} />
-    <Sponsors title={data.sponsors.title} companies={data.sponsors.companies}>
+    <Sponsors
+      title={data.sponsors.title}
+      companies={data.sponsors.companies}
+      cta={data.links.sponsors}
+    >
       {data.sponsors.content}
     </Sponsors>
     <Speakers title={data.speakers.title} people={data.speakers.people}>

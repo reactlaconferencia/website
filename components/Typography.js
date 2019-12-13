@@ -27,6 +27,14 @@ export const Paragraph = styled.p`
   font-weight: 500;
 `;
 
+export const ParagraphInverted = styled.p`
+  background-color: ${props => props.theme.text.primary};
+  color: ${props => props.theme.text.light};
+  font-size: 18px;
+  font-weight: 700;
+  padding: 8px 16px;
+`;
+
 export const ParagraphAccent = styled(Paragraph)`
   color: ${props => props.theme.text.accent};
   font-weight: 700;
@@ -53,4 +61,15 @@ export const ParagraphXSmall = styled.p`
 export const ParagraphXSmallAccent = styled(ParagraphXSmall)`
   color: ${props => props.theme.text.accent};
   font-weight: 700;
+`;
+
+export const Link = styled.a`
+  color: ${props => props.theme.text.accent};
+  font-size: 16px;
+  font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 `;

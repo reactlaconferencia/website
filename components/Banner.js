@@ -8,6 +8,7 @@ import {
   ParagraphAccent,
   ParagraphXSmall,
   ParagraphXSmallAccent,
+  ParagraphInverted,
 } from './Typography';
 import { Logo } from './Logo';
 import { SectionWrapper } from './SectionWrapper';
@@ -60,7 +61,7 @@ export function Banner() {
           for Spanish speakers{' '}
           <ParagraphAccent as="span">in Latin America</ParagraphAccent>
         </HeaderSubtitle>
-        <ParagraphXSmallAccent>Medellín, July 18, 2020</ParagraphXSmallAccent>
+        <ParagraphInverted>Medellín, July 18, 2020</ParagraphInverted>
         <ImageWrapper>
           <Logo width={128} />
         </ImageWrapper>

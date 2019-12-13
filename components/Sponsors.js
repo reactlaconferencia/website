@@ -34,7 +34,7 @@ const ButtonWrapper = styled.div`
   margin-top: 24px;
 `;
 
-function SponsorsList({ tier, sponsors }) {
+function SponsorsList({ cta, tier, sponsors }) {
   if (!sponsors.length) {
     return null;
   }
@@ -56,7 +56,7 @@ function SponsorsList({ tier, sponsors }) {
   );
 }
 
-export function Sponsors({ children, title, companies }) {
+export function Sponsors({ children, title, companies, cta }) {
   return (
     <SectionInverted title={title}>
       <ParagraphSmall
@@ -71,7 +71,7 @@ export function Sponsors({ children, title, companies }) {
       <SponsorsList tier="Silver" sponsors={companies.silver} />
       <SponsorsList tier="Bronze" sponsors={companies.bronze} />
       <ButtonWrapper>
-        <SecondaryCTA href="#">Become a sponsor</SecondaryCTA>
+        <SecondaryCTA href={cta}>Become a sponsor</SecondaryCTA>
       </ButtonWrapper>
     </SectionInverted>
   );

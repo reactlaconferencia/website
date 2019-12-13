@@ -81,6 +81,7 @@ export const theme = {
   text: {
     primary: colors['blue-grey-900'],
     secondary: colors['blue-grey-800'],
+    light: colors['blue-grey-050'],
     accent: colors['purple-700'],
   },
   cta: {

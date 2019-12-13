@@ -36,8 +36,8 @@ export function Numbers({ content, cfpHref }) {
     <PrimitiveSection>
       <Section>
         <List>
-          {content.map(c => (
-            <ListItem key={c} as="li">
+          {content.map((c, i) => (
+            <ListItem key={i} as="li">
               {c}
             </ListItem>
           ))}
