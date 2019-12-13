@@ -121,7 +121,7 @@ export const data = {
       {
         name: 'Ely Alvarado',
         image: 'speakers/ely.png',
-        extra: '🇨🇴',
+        extra: '🇻🇪',
         website: 'https://twitter.com/elyalvarado',
         handle: 'elyalvarado',
       },
