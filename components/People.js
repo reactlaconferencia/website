@@ -58,7 +58,9 @@ export function Person({ name, image, extra, handle, website }) {
   return (
     <PersonWrapper>
       <AvatarWrapper>
-        <Avatar alt={`${name} portrait`} src={buildImagePath(image)} />
+        <a href={website} target="_blank">
+          <Avatar alt={`${name} portrait`} src={buildImagePath(image)} />
+        </a>
       </AvatarWrapper>
       <ParagraphSmallBold
         css={`

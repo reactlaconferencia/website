@@ -6,7 +6,7 @@ import { ParagraphSmall, ParagraphSmallBold } from '../components/Typography';
 import { PrimaryCTA } from '../components/Buttons';
 import { People } from '../components/People';
 
-export function Team({ children, title, people }) {
+export function Team({ children, title, people, href }) {
   return (
     <Section
       css={`
@@ -26,7 +26,7 @@ export function Team({ children, title, people }) {
         css={`
           margin: 20px auto auto;
         `}
-        href="#"
+        href={href}
       >
         Join the team
       </PrimaryCTA>

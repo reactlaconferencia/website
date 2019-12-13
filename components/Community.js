@@ -55,7 +55,7 @@ function Partners({ partners }) {
   );
 }
 
-export function Community({ children, title, partners }) {
+export function Community({ children, title, partners, href }) {
   return (
     <Section
       css={`
@@ -75,7 +75,7 @@ export function Community({ children, title, partners }) {
         css={`
           margin: 20px auto auto;
         `}
-        href="#"
+        href={href}
       >
         Become a partner
       </PrimaryCTA>

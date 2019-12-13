@@ -35,10 +35,18 @@ const Home = () => (
       {data.speakers.content}
     </Speakers>
     <Venue title={data.venue.title}>{data.venue.content}</Venue>
-    <Team title={data.team.title} people={data.team.people}>
+    <Team
+      title={data.team.title}
+      people={data.team.people}
+      href={data.links.team}
+    >
       {data.team.content}
     </Team>
-    <Community title={data.community.title} partners={data.community.partners}>
+    <Community
+      title={data.community.title}
+      partners={data.community.partners}
+      href={data.links.community}
+    >
       {data.community.content}
     </Community>
     <AboutMedellin />
