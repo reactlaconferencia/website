@@ -8,7 +8,7 @@ const Section = styled.div`
   display: grid;
   grid-row-gap: 15px;
   justify-items: center;
-  padding: 35px 0;
+  margin: 50px 0 0 0;
 `;
 
 const List = styled.ul`

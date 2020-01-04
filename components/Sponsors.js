@@ -58,7 +58,7 @@ function SponsorsList({ cta, tier, sponsors }) {
 
 export function Sponsors({ children, title, companies, cta }) {
   return (
-    <SectionInverted title={title}>
+    <SectionInverted css={`margin-top: 50px`} title={title}>
       <ParagraphSmall
         css={`
           text-align: center;

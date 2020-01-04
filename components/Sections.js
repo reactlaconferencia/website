@@ -10,8 +10,8 @@ const Title = styled(Header)`
 
 const SectionWrapperInverted = styled.div`
   background-color: ${props => props.theme.bg.default};
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 `;
 
 export function Section({ title, children, className }) {

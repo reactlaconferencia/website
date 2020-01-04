@@ -9,7 +9,7 @@ export function Speakers({ children, title, people }) {
   return (
     <Section
       css={`
-        margin-top: 30px;
+        margin-top: 60px;
       `}
       title={title}
     >

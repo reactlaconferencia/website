@@ -28,7 +28,7 @@ export function AboutMedellin() {
   return (
     <SectionInverted
       css={`
-        margin-top: 35px;
+        margin-top: 50px;
       `}
       title="About Medellín"
     >

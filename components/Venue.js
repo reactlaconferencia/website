@@ -10,7 +10,7 @@ export function Venue({ title, children }) {
     <>
       <Section
         css={`
-          margin-top: 30px;
+          margin-top: 60px;
         `}
         title={title}
       >
