@@ -150,6 +150,18 @@ export const data = {
         country: 'Colombia',
         website: 'https://meetup.com/react-medellin/',
       },
+      {
+        name: 'React Bolivia',
+        image: 'community/react-bolivia.png',
+        country: 'Bolivia',
+        website: 'https://twitter.com/reactbolivia',
+      },
+      {
+        name: 'Horchata JS',
+        image: 'community/horchata-js.png',
+        country: 'El Salvador',
+        website: 'https://twitter.com/HorchataJS',
+      },
     ],
   },
 };

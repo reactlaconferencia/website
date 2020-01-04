@@ -19,17 +19,26 @@ const Avatar = styled.img`
 const PartnersList = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
+  grid-row-gap: 22px;
   justify-items: center;
   margin-top: 20px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 50px;
+  }
 `;
 
-function Partner({ name, image, country }) {
+function Partner({ name, image, country, website }) {
   return (
     <PartnerWrapper>
-      <Avatar alt={`${name} community`} src={buildImagePath(image)} />
+      <a href={website} target="_blank" rel="noopener">
+        <Avatar alt={`${name} community`} src={buildImagePath(image)} />
+      </a>
       <ParagraphSmallBold
         css={`
-          margin-top: 10px;
+          margin-top: 0;
         `}
       >
         {name}
@@ -48,6 +57,7 @@ function Partners({ partners }) {
             name={partner.name}
             image={partner.image}
             country={partner.country}
+            website={partner.website}
           />
         </li>
       ))}
