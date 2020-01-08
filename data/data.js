@@ -138,6 +138,13 @@ export const data = {
         extra: '🌍',
         website: 'https://forms.gle/Js2ohTHi8yvENuNs9',
       },
+      {
+        name: 'Max Stoiber',
+        image: 'speakers/max.jpeg',
+        extra: '🇦🇹',
+        website: 'https://twitter.com/mxstbr',
+        handle: 'mxstbr',
+      },
     ],
   },
   community: {
