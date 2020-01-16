@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import { Section } from '../components/Sections';
 import { ParagraphSmall, ParagraphSmallBold } from '../components/Typography';
-import { PrimaryCTA } from '../components/Buttons';
 import { People } from '../components/People';
 
 export function Team({ children, title, people, href }) {
@@ -22,14 +21,6 @@ export function Team({ children, title, people, href }) {
         {children}
       </ParagraphSmall>
       <People people={people} />
-      <PrimaryCTA
-        css={`
-          margin: 20px auto auto;
-        `}
-        href={href}
-      >
-        Join the team
-      </PrimaryCTA>
     </Section>
   );
 }
