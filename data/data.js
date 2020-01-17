@@ -176,6 +176,18 @@ export const data = {
         country: 'El Salvador',
         website: 'https://twitter.com/HorchataJS',
       },
+      {
+        name: 'React Finland',
+        image: 'community/react-finland.svg',
+        country: 'Finland',
+        website: 'https://twitter.com/reactfinland',
+      },
+      {
+        name: 'Dev.to',
+        image: 'community/devto.png',
+        country: '🌍',
+        website: 'https://dev.to',
+      },
     ],
   },
 };
