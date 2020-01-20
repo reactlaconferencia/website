@@ -2,17 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { data } from '../data/data';
-import {
-  Header as HeaderPrimitive,
-  Paragraph,
-  ParagraphAccent,
-  ParagraphXSmall,
-  ParagraphXSmallAccent,
-  ParagraphInverted,
-} from './Typography';
+import { Header as HeaderPrimitive, Paragraph, ParagraphAccent, ParagraphXSmall, ParagraphInverted } from './Typography';
 import { Logo } from './Logo';
 import { SectionWrapper } from './SectionWrapper';
-import { PrimaryCTA, GreenCTA } from './Buttons';
+import { GreenCTA } from './Buttons';
+import { withTranslation, Trans } from '../i18n';
 
 const BannerWrapper = styled.section`
   display: grid;
@@ -50,32 +44,34 @@ const HeaderSubtitle = styled(Paragraph)`
   max-width: 290px;
 `;
 
-export function Banner() {
+function Banner({ t }) {
   return (
     <>
       <BannerWrapper>
         <Header>React La Conferencia</Header>
         <HeaderSubtitle>
-          The{' '}
-          <ParagraphAccent as="span">First React conference</ParagraphAccent>{' '}
-          for Spanish speakers{' '}
-          <ParagraphAccent as="span">in Latin America</ParagraphAccent>
+          <Trans i18nKey="intro">
+            The <ParagraphAccent as="span">First React conference</ParagraphAccent> for Spanish speakers{' '}
+            <ParagraphAccent as="span">in Latin America</ParagraphAccent>
+          </Trans>
         </HeaderSubtitle>
-        <ParagraphInverted>Medellín, July 18, 2020</ParagraphInverted>
+        <ParagraphInverted>{t('date')}</ParagraphInverted>
         <ImageWrapper>
           <Logo width={128} />
         </ImageWrapper>
         <ParagraphXSmall>
-          Complejo Ruta N Calle 67 Nº 52-20
-          <br /> Piso 2 Torre A. Medellín - Colombia
+          {t('ruta_n_dir')}
+          <br /> {t('ruta_n_comp')}
         </ParagraphXSmall>
       </BannerWrapper>
       <SectionWrapper>
         <CTAWrapper>
-          <GreenCTA href={data.links.cfp}>call for speakers</GreenCTA>
-          <PrimaryCTA href={data.links.tickets}>ReactLaConf tickets</PrimaryCTA>
+          <GreenCTA href={data.links.cfp}>{t('call_for_speakers')}</GreenCTA>
+          <PrimaryCTA href={data.links.tickets}>get tickets</PrimaryCTA>
         </CTAWrapper>
       </SectionWrapper>
     </>
   );
 }
+
+export default withTranslation('common')(Banner);

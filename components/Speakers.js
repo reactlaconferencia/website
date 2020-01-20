@@ -1,8 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import { Section } from '../components/Sections';
-import { ParagraphSmall, ParagraphSmallBold } from '../components/Typography';
+import { ParagraphSmall } from '../components/Typography';
 import { People } from '../components/People';
 
 export function Speakers({ children, title, people }) {

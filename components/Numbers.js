@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { Section as PrimitiveSection } from './Sections';
 import { HeaderLarge as ListItem } from './Typography';
 import { PrimaryCTA } from './Buttons';
+import { withTranslation } from '../i18n';
 
 const Section = styled.div`
   display: grid;
@@ -31,14 +33,15 @@ const List = styled.ul`
   }
 `;
 
-export function Numbers({ content, cfpHref }) {
+function Numbers({ content, cfpHref, t }) {
   return (
     <PrimitiveSection>
       <Section>
         <List>
-          {content.map((c, i) => (
+          {content.map((item, i) => (
             <ListItem key={i} as="li">
-              {c}
+              <span>{t(item.value)}</span>
+              <span>{t(item.label)}</span>
             </ListItem>
           ))}
         </List>
@@ -48,9 +51,11 @@ export function Numbers({ content, cfpHref }) {
           `}
           href={cfpHref}
         >
-          call for speakers
+          {t('call_for_speakers')}
         </PrimaryCTA>
       </Section>
     </PrimitiveSection>
   );
 }
+
+export default withTranslation('common')(Numbers);

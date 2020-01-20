@@ -1,11 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-import { SectionBody } from './Typography';
-import { Section, SectionInverted } from './Sections';
+
+import { SectionInverted } from './Sections';
 import { ParagraphSmall } from './Typography';
 import { SecondaryCTA } from './Buttons';
+import { withTranslation } from '../i18n';
 
-export function AboutUs({ children, title }) {
+function AboutUs({ children, title, t }) {
   return (
     <SectionInverted title={title}>
       <ParagraphSmall
@@ -21,8 +21,10 @@ export function AboutUs({ children, title }) {
         `}
         href="http://eepurl.com/gAAMLT"
       >
-        Subscribe to our newsletter
+        {t('newsletter_subscribe_cta')}
       </SecondaryCTA>
     </SectionInverted>
   );
 }
+
+export default withTranslation('common')(AboutUs);

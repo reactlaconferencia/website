@@ -1,57 +1,42 @@
 import React from 'react';
-import Head from 'next/head';
 import { Navigation } from '../components/Navigation/Navigation';
-import { Banner } from '../components/Banner';
-import { Section, SectionInverted } from '../components/Sections';
-import { Numbers } from '../components/Numbers';
+import Banner from '../components/Banner';
+import Numbers from '../components/Numbers';
 import { data } from '../data/data';
-import { GetHere } from '../components/GetHere';
-import { AboutUs } from '../components/AboutUs';
-import { Sponsors } from '../components/Sponsors';
+import AboutUs from '../components/AboutUs';
+import Sponsors from '../components/Sponsors';
 import { Venue } from '../components/Venue';
 import { Team } from '../components/Team';
 import { Speakers } from '../components/Speakers';
-import { Community } from '../components/Community';
-import { AboutMedellin } from '../components/AboutMedellin';
-import { Footer } from '../components/Footer';
-import { CodeOfConduct } from '../components/CodeOfConduct';
+import Community from '../components/Community';
+import AboutMedellin from '../components/AboutMedellin';
+import Footer from '../components/Footer';
+import { withTranslation } from '../i18n';
 
-const Home = () => (
+const Home = ({ t }) => (
   <div>
     <Navigation />
     <Banner />
     <div style={{ marginTop: 30 }}>
-      <AboutUs title={data.about.title}>{data.about.content}</AboutUs>
+      <AboutUs title={t('about_us_title')}>{t('about_us_description')}</AboutUs>
     </div>
     <Numbers cfpHref={data.links.cfp} content={data.numbers.content} />
-    <Sponsors
-      title={data.sponsors.title}
-      companies={data.sponsors.companies}
-      cta={data.links.sponsors}
-    >
-      {data.sponsors.content}
+    <Sponsors title={t('sponsors_title')} companies={data.sponsors.companies} cta={data.links.sponsors}>
+      {t('sponsors_subtitle')}
     </Sponsors>
-    <Speakers title={data.speakers.title} people={data.speakers.people}>
-      {data.speakers.content}
+    <Speakers title={t('speakers_title')} people={data.speakers.people}>
+      {t('speakers_subtitle')}
     </Speakers>
-    <Venue title={data.venue.title}>{data.venue.content}</Venue>
-    <Team
-      title={data.team.title}
-      people={data.team.people}
-      href={data.links.team}
-    >
-      {data.team.content}
+    <Venue title={t('venue_title')}>{t('ruta_n_city')}</Venue>
+    <Team title={t('team_title')} people={data.team.people} href={data.links.team}>
+      {t('team_subtitle')}
     </Team>
-    <Community
-      title={data.community.title}
-      partners={data.community.partners}
-      href={data.links.community}
-    >
-      {data.community.content}
+    <Community title={t('community_partners_title')} partners={data.community.partners} href={data.links.community}>
+      {t('community_partners_subtitle')}
     </Community>
     <AboutMedellin />
     <Footer />
   </div>
 );
 
-export default Home;
+export default withTranslation('common')(Home);

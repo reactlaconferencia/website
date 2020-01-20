@@ -5,6 +5,7 @@ import { Section } from '../components/Sections';
 import { ParagraphSmall, ParagraphSmallBold } from '../components/Typography';
 import { PrimaryCTA } from '../components/Buttons';
 import { buildImagePath } from '../utils/utils';
+import { withTranslation } from '../i18n';
 
 const PartnerWrapper = styled.div`
   display: grid;
@@ -53,19 +54,14 @@ function Partners({ partners }) {
     <PartnersList>
       {partners.map(partner => (
         <li key={partner.name}>
-          <Partner
-            name={partner.name}
-            image={partner.image}
-            country={partner.country}
-            website={partner.website}
-          />
+          <Partner name={partner.name} image={partner.image} country={partner.country} website={partner.website} />
         </li>
       ))}
     </PartnersList>
   );
 }
 
-export function Community({ children, title, partners, href }) {
+function Community({ children, title, partners, href, t }) {
   return (
     <Section
       css={`
@@ -87,8 +83,10 @@ export function Community({ children, title, partners, href }) {
         `}
         href={href}
       >
-        Become a partner
+        {t('become_a_partner_cta')}
       </PrimaryCTA>
     </Section>
   );
 }
+
+export default withTranslation('common')(Community);

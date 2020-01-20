@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { Paragraph, ParagraphAccent } from './Typography';
+import { withTranslation } from '../i18n';
 
 const FooterWrapper = styled.footer`
   text-align: center;
@@ -13,10 +15,10 @@ const Content = styled(Paragraph)`
   font-weight: 700;
 `;
 
-export function Footer() {
+function Footer({ t }) {
   return (
     <FooterWrapper>
-      <Content>Made with ❤️ in Medellín</Content>
+      <Content>{t('made_by')}</Content>
       <ParagraphAccent
         as="a"
         href="/code-of-conduct"
@@ -25,8 +27,10 @@ export function Footer() {
           margin-top: 12px;
         `}
       >
-        Code of Conduct
+        {t('coc')}
       </ParagraphAccent>
     </FooterWrapper>
   );
 }
+
+export default withTranslation('common')(Footer);

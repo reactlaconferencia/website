@@ -9,39 +9,33 @@ export const data = {
     tickets: 'https://ti.to/react-la-conferencia/2020/',
     cssConf: 'https://cssconf.co/tickets',
   },
-  about: {
-    title: 'About us',
-    content:
-      'We are the first React conference for Spanish speakers in Latin America. This is an event by the community to the community! Come and find the latest knowledge and awesome experiences around React in Medellín, Colombia.',
-  },
   numbers: {
     title: 'The conference in numbers',
     fineprint: 'July 18 - Conference',
     content: [
-      <>
-        <span>300+</span>
-        <span>people</span>
-      </>,
-      <>
-        <span>1</span> <span>track</span>
-      </>,
-      <>
-        <span>11</span> <span>speakers</span>
-      </>,
+      {
+        value: 'number_of_people_value',
+        label: 'number_of_people_label',
+      },
+      {
+        value: 'number_of_tracks_value',
+        label: 'number_of_tracks_label',
+      },
+      {
+        value: 'number_of_speakers_value',
+        label: 'number_of_speakers_label',
+      },
     ],
   },
   tickets: {
     title: 'Tickets 🎟',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper neque nunc mattis id gravida porttitor.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper neque nunc mattis id gravida porttitor.',
   },
   getHere: {
     title: 'Get here 🌍',
     content: {
-      medellin:
-        'Medellín is the Colombian tech hub. With a strong presence of different tech companies from different parts of the world.',
-      airport:
-        'You’ll arrive at Jose María Córdoba International airport, located in Rionegro which is a 25 minute drive from Medellín',
+      medellin: 'Medellín is the Colombian tech hub. With a strong presence of different tech companies from different parts of the world.',
+      airport: 'You’ll arrive at Jose María Córdoba International airport, located in Rionegro which is a 25 minute drive from Medellín',
       hotels: [
         { name: 'Diez Hotel', url: 'https://www.diezhotel.com/' },
         { name: 'Viaggio hotel', url: 'https://www.viaggiomedellin.com/' },
@@ -53,12 +47,9 @@ export const data = {
   },
   schedule: {
     title: 'Schedule 📅',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper neque nunc mattis id gravida porttitor.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper neque nunc mattis id gravida porttitor.',
   },
   sponsors: {
-    title: 'Sponsors',
-    content: 'This wonderful event is posible thanks to this amazing companies',
     companies: {
       platinum: [
         {
@@ -71,13 +62,7 @@ export const data = {
       bronze: [],
     },
   },
-  venue: {
-    title: 'Venue',
-    content: 'Complejo Ruta N Calle 67 Nº 52-20, Medellín - Colombia',
-  },
   team: {
-    title: 'Team',
-    content: 'Brought you by these awesome folks',
     people: [
       {
         name: 'Mateo Garcia',
@@ -103,8 +88,6 @@ export const data = {
     ],
   },
   speakers: {
-    title: 'Speakers',
-    content: 'We are honored to have such a great initial lineup.',
     people: [
       {
         name: 'Donavon West',
@@ -157,8 +140,6 @@ export const data = {
     ],
   },
   community: {
-    title: 'Community Partners',
-    content: 'Different countries, one community.',
     partners: [
       {
         name: 'React Medellín',
