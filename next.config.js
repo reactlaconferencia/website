@@ -12,7 +12,7 @@ module.exports = withOffline({
           cacheName: 'offlineCache',
           expiration: {
             maxEntries: 200,
-            maxAgeSeconds: 3 * 24 * 60 * 60,
+            maxAgeSeconds: 3 * 24 * 60 * 60, // Clean up user cache after three days
           }
         }
       }
