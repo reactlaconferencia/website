@@ -20,6 +20,24 @@ export default class MyApp extends App {
       <>
         <Head>
           <link
+            rel="manifest"
+            href="/manifest.json"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="512x512"
+            href="/android-chrome-512x512.png"
+          />
+          {/* <!-- PWA IOS --> */}
+          <meta name="app-mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+          <meta name="format-detection" name="telephone=no" />
+          <meta name="apple-mobile-web-app-title" content="React LaConf" />
+          {/* <!-- Windows Metatags --> */}
+          <meta name="msapplication-TileImage" content="/android-chrome-512x512.png" />
+
+          <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           />

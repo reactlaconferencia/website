@@ -1,0 +1,26 @@
+{
+  "short_name": "React LaConf",
+  "name": "React La Conferencia",
+  "description": "The First React conference for Spanish speakers in Latin America",
+  "icons": [
+    {
+      "src": "./icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#E6E6FF",
+  "background_color": "#C4C6FF"
+}
