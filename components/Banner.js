@@ -67,7 +67,7 @@ function Banner({ t }) {
       <SectionWrapper>
         <CTAWrapper>
           <GreenCTA href={data.links.cfp}>{t('call_for_speakers')}</GreenCTA>
-          <PrimaryCTA href={data.links.tickets}>get tickets</PrimaryCTA>
+          <PrimaryCTA href={data.links.tickets}>{t('get_tickets')}</PrimaryCTA>
         </CTAWrapper>
       </SectionWrapper>
     </>
