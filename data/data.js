@@ -6,6 +6,7 @@ export const data = {
     team: 'https://forms.gle/GnDZ5f5zDPF79wxB8',
     community: 'https://forms.gle/hBXbTV7DYBsRXiQTA',
     sponsors: 'https://forms.gle/MnJNbzU4K5WohuhN9',
+    tickets: 'https://ti.to/react-la-conferencia/2020/',
   },
   about: {
     title: 'About us',
