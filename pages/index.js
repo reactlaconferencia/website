@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigation } from '../components/Navigation/Navigation';
+import Navigation from '../components/Navigation/Navigation';
 import Banner from '../components/Banner';
 import Numbers from '../components/Numbers';
 import { data } from '../data/data';

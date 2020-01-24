@@ -11,7 +11,7 @@ import {
 } from './Typography';
 import { Logo } from './Logo';
 import { SectionWrapper } from './SectionWrapper';
-import { GreenCTA } from './Buttons';
+import { GreenCTA, PrimaryCTA } from './Buttons';
 import { withTranslation, Trans } from '../i18n';
 
 const BannerWrapper = styled.section`
