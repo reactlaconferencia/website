@@ -21,17 +21,29 @@ const Home = ({ t }) => (
       <AboutUs title={t('about_us_title')}>{t('about_us_description')}</AboutUs>
     </div>
     <Numbers cfpHref={data.links.cfp} content={data.numbers.content} />
-    <Sponsors title={t('sponsors_title')} companies={data.sponsors.companies} cta={data.links.sponsors}>
+    <Sponsors
+      title={t('sponsors_title')}
+      companies={data.sponsors.companies}
+      cta={data.links.sponsors}
+    >
       {t('sponsors_subtitle')}
     </Sponsors>
     <Speakers title={t('speakers_title')} people={data.speakers.people}>
       {t('speakers_subtitle')}
     </Speakers>
     <Venue title={t('venue_title')}>{t('ruta_n_city')}</Venue>
-    <Team title={t('team_title')} people={data.team.people} href={data.links.team}>
+    <Team
+      title={t('team_title')}
+      people={data.team.people}
+      href={data.links.team}
+    >
       {t('team_subtitle')}
     </Team>
-    <Community title={t('community_partners_title')} partners={data.community.partners} href={data.links.community}>
+    <Community
+      title={t('community_partners_title')}
+      partners={data.community.partners}
+      href={data.links.community}
+    >
       {t('community_partners_subtitle')}
     </Community>
     <AboutMedellin />

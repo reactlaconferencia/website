@@ -46,7 +46,10 @@ function SponsorsList({ cta, tier, sponsors }) {
       <ul>
         {sponsors.map(sponsor => (
           <li key={sponsor.name}>
-            <PlatinumImage alt={`${sponsor.name} logo`} src={buildImagePath(sponsor.image)} />
+            <PlatinumImage
+              alt={`${sponsor.name} logo`}
+              src={buildImagePath(sponsor.image)}
+            />
           </li>
         ))}
       </ul>
@@ -69,10 +72,19 @@ function Sponsors({ children, title, companies, cta, t }) {
       >
         {children}
       </ParagraphSmall>
-      <SponsorsList tier={t('sponsors_tier_platinum')} sponsors={companies.platinum} />
+      <SponsorsList
+        tier={t('sponsors_tier_platinum')}
+        sponsors={companies.platinum}
+      />
       <SponsorsList tier={t('sponsors_tier_gold')} sponsors={companies.gold} />
-      <SponsorsList tier={t('sponsors_tier_silver')} sponsors={companies.silver} />
-      <SponsorsList tier={t('sponsors_tier_bronze')} sponsors={companies.bronze} />
+      <SponsorsList
+        tier={t('sponsors_tier_silver')}
+        sponsors={companies.silver}
+      />
+      <SponsorsList
+        tier={t('sponsors_tier_bronze')}
+        sponsors={companies.bronze}
+      />
       <ButtonWrapper>
         <SecondaryCTA href={cta}>{t('become_a_sponsor_cta')}</SecondaryCTA>
       </ButtonWrapper>

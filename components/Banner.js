@@ -2,7 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { data } from '../data/data';
-import { Header as HeaderPrimitive, Paragraph, ParagraphAccent, ParagraphXSmall, ParagraphInverted } from './Typography';
+import {
+  Header as HeaderPrimitive,
+  Paragraph,
+  ParagraphAccent,
+  ParagraphXSmall,
+  ParagraphInverted,
+} from './Typography';
 import { Logo } from './Logo';
 import { SectionWrapper } from './SectionWrapper';
 import { GreenCTA } from './Buttons';
@@ -51,7 +57,9 @@ function Banner({ t }) {
         <Header>React La Conferencia</Header>
         <HeaderSubtitle>
           <Trans i18nKey="intro">
-            The <ParagraphAccent as="span">First React conference</ParagraphAccent> for Spanish speakers{' '}
+            The{' '}
+            <ParagraphAccent as="span">First React conference</ParagraphAccent>{' '}
+            for Spanish speakers{' '}
             <ParagraphAccent as="span">in Latin America</ParagraphAccent>
           </Trans>
         </HeaderSubtitle>

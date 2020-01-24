@@ -54,7 +54,12 @@ function Partners({ partners }) {
     <PartnersList>
       {partners.map(partner => (
         <li key={partner.name}>
-          <Partner name={partner.name} image={partner.image} country={partner.country} website={partner.website} />
+          <Partner
+            name={partner.name}
+            image={partner.image}
+            country={partner.country}
+            website={partner.website}
+          />
         </li>
       ))}
     </PartnersList>

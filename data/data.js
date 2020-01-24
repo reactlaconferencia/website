@@ -29,13 +29,16 @@ export const data = {
   },
   tickets: {
     title: 'Tickets 🎟',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper neque nunc mattis id gravida porttitor.',
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper neque nunc mattis id gravida porttitor.',
   },
   getHere: {
     title: 'Get here 🌍',
     content: {
-      medellin: 'Medellín is the Colombian tech hub. With a strong presence of different tech companies from different parts of the world.',
-      airport: 'You’ll arrive at Jose María Córdoba International airport, located in Rionegro which is a 25 minute drive from Medellín',
+      medellin:
+        'Medellín is the Colombian tech hub. With a strong presence of different tech companies from different parts of the world.',
+      airport:
+        'You’ll arrive at Jose María Córdoba International airport, located in Rionegro which is a 25 minute drive from Medellín',
       hotels: [
         { name: 'Diez Hotel', url: 'https://www.diezhotel.com/' },
         { name: 'Viaggio hotel', url: 'https://www.viaggiomedellin.com/' },
@@ -47,7 +50,8 @@ export const data = {
   },
   schedule: {
     title: 'Schedule 📅',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper neque nunc mattis id gravida porttitor.',
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper neque nunc mattis id gravida porttitor.',
   },
   sponsors: {
     companies: {

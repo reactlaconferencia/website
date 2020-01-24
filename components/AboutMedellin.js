@@ -36,7 +36,9 @@ function AboutMedellin({ t }) {
       <Title>{t('how_to_get_here_title')}</Title>
       <Paragraph>
         <Trans i18nKey="how_to_get_here_description">
-          You'll arrive to <Accent as="span">Jose María Cordoba (MDE) Airport</Accent> which is just 25 minutes away from Medellín by Taxi/Uber
+          You'll arrive to{' '}
+          <Accent as="span">Jose María Cordoba (MDE) Airport</Accent> which is
+          just 25 minutes away from Medellín by Taxi/Uber
         </Trans>
       </Paragraph>
       <Title>{t('where_to_stay_title')}</Title>
@@ -55,7 +57,10 @@ function AboutMedellin({ t }) {
         </Li>
         <Li>
           <Paragraph>
-            <Accent as="a" href="https://www.viaggio.com.co/en/hotel-viaggio-medellin-in-antioquia/">
+            <Accent
+              as="a"
+              href="https://www.viaggio.com.co/en/hotel-viaggio-medellin-in-antioquia/"
+            >
               {t('viaggio_hotel')}
             </Accent>
           </Paragraph>
@@ -64,8 +69,10 @@ function AboutMedellin({ t }) {
       <Title>{t('how_to_get_to_the_conference_title')}</Title>
       <Paragraph>
         <Trans i18nKey="how_to_get_to_the_conference_description">
-          Medellín offers a metro system that will take you to the <Accent as="span">Universidad Station</Accent> that is just at 5 minute walk to the
-          Venue in around 10 minutes from <Accent as="span">Poblado Station</Accent>
+          Medellín offers a metro system that will take you to the{' '}
+          <Accent as="span">Universidad Station</Accent> that is just at 5
+          minute walk to the Venue in around 10 minutes from{' '}
+          <Accent as="span">Poblado Station</Accent>
         </Trans>
       </Paragraph>
       <Title>{t('have_questions_title')}</Title>
