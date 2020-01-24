@@ -22,17 +22,17 @@ const LangSelect = styled(SelectPrimary)`
   font-size: 12px;
 `;
 
+function changeLang({ target }) {
+  i18n.changeLanguage(target.value);
+}
+
 function Navigation({ t }) {
   return (
     <NavigationWrapper>
       <Logo width={40} />
-      <LangSelect
-        onChange={() =>
-          i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en')
-        }
-      >
-        <option>{t('english')}</option>
-        <option>{t('spanish')}</option>
+      <LangSelect value={i18n.language} onChange={changeLang}>
+        <option value="en">{t('english')}</option>
+        <option value="es">{t('spanish')}</option>
       </LangSelect>
     </NavigationWrapper>
   );
