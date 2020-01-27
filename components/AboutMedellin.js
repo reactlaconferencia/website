@@ -75,8 +75,8 @@ export function AboutMedellin() {
           @reactlaconf
         </Accent>{' '}
         or send us an email to{' '}
-        <Accent as="a" href="mailto:reactconfcolombia@gmail.com">
-          reactconfcolombia@gmail.com
+        <Accent as="a" href="mailto:hola@reactlaconf.co">
+          hola@reactlaconf.co
         </Accent>
       </Paragraph>
     </SectionInverted>

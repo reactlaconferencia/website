@@ -76,8 +76,8 @@ export function CodeOfConduct({ children, title }) {
           @simonhoyosdev
         </Accent>
         , or you can send us an email to{' '}
-        <Accent href="mailto:reactconfcolombia@gmail.com" as="a">
-          reactconfcolombia@gmail.com
+        <Accent href="mailto:hola@reactlaconf.co" as="a">
+          hola@reactlaconf.co
         </Accent>{' '}
         we will guarantee 100% confidentiality. <br /> At the conference, you
         can reach out to any of the organizers, we're here to help you!
