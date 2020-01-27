@@ -73,7 +73,8 @@ export function Banner() {
       <SectionWrapper>
         <CTAWrapper>
           <GreenCTA href={data.links.cfp}>call for speakers</GreenCTA>
-          <PrimaryCTA href={data.links.tickets}>get tickets</PrimaryCTA>
+          <PrimaryCTA href={data.links.tickets}>ReactLaConf tickets</PrimaryCTA>
+          <PrimaryCTA href={data.links.cssConf}>CSSConf + ReactLaConf tickets</PrimaryCTA>
         </CTAWrapper>
       </SectionWrapper>
     </>
