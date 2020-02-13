@@ -190,6 +190,18 @@ export const data = {
         country: '🌍',
         website: 'https://dev.to',
       },
+      {
+        name: 'MedellínJS',
+        image: 'community/medellin-js.svg',
+        country: 'Colombia',
+        website: 'https://meetup.com/MedellinJS',
+      },
+      {
+        name: 'ReactJS Cali',
+        image: 'community/react-cali.svg',
+        country: 'Colombia',
+        website: 'https://twitter.com/reactjscali',
+      },
     ],
   },
 };
