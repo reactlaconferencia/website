@@ -28,6 +28,11 @@ const PartnersList = styled.ul`
     grid-row-gap: 40px;
     grid-column-gap: 50px;
   }
+
+  li {
+    display: grid;
+    align-items: center;
+  }
 `;
 
 function Partner({ name, image, country, website }) {

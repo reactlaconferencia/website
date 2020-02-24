@@ -179,6 +179,18 @@ export const data = {
         website: 'https://twitter.com/HorchataJS',
       },
       {
+        name: 'React New York',
+        image: 'community/react-new-york.svg',
+        country: 'USA',
+        website: 'https://reactnewyork.com/',
+      },
+      {
+        name: 'React Norway',
+        image: 'community/react-norway.svg',
+        country: 'Norway',
+        website: 'https://reactnorway.com/',
+      },
+      {
         name: 'React Finland',
         image: 'community/react-finland.svg',
         country: 'Finland',
@@ -201,6 +213,12 @@ export const data = {
         image: 'community/react-cali.svg',
         country: 'Colombia',
         website: 'https://twitter.com/reactjscali',
+      },
+      {
+        name: 'React Panama',
+        image: 'community/react-panama.png',
+        country: 'Panamá',
+        website: 'https://www.meetup.com/React-Panama/',
       },
     ],
   },
