@@ -197,6 +197,13 @@ export const data = {
         website: 'https://twitter.com/reactfinland',
       },
       {
+        name: 'React Native EU',
+        image: 'community/react-native-europe.png',
+        country: 'Poland',
+        website:
+          'https://www.react-native.eu/?utm_source=partner&utm_medium=referral&utm_campaign=ReactLaConferencia',
+      },
+      {
         name: 'Dev.to',
         image: 'community/devto.png',
         country: '🌍',
