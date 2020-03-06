@@ -29,7 +29,7 @@ const AvatarWrapper = styled.div`
 `;
 
 const Avatar = styled.img`
-  height: auto;
+  min-height: 100%;
   width: 100%;
 `;
 
