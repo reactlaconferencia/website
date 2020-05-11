@@ -15,6 +15,10 @@ export const Header = styled.h2`
   font-weight: 900;
 `;
 
+export const HeaderAccent = styled(Header)`
+  color: ${props => props.theme.text.accent};
+`;
+
 export const HeaderLarge = styled.h2`
   color: ${props => props.theme.text.primary};
   font-size: 48px;
